@@ -36,8 +36,11 @@ class _NavigationState extends State<NavigationView> {
             title:Text('Example MVC Architecture'),
           ),
           ListTile(
-            leading:Icon(Icons.account_box),
-            title:Text('Account'),
+            leading:Icon(Icons.person),
+            title:Text('Person MVVM'),
+            onTap: (){
+              navController.navigateToPersonMVVM();
+            },
           ),
         ]
     ),
