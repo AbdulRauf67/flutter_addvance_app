@@ -4,6 +4,7 @@ import 'package:advance_level_app/helper/navigator.dart';
 import 'package:advance_level_app/view/Person_List_View.dart';
 import 'package:flutter/widgets.dart';
 
+import '../view/Event_Task_View.dart';
 import '../view/m_v_c_architectue_ui.dart';
 import 'MVC_Controller.dart';
 
@@ -19,6 +20,9 @@ class NavigationViewModel extends ChangeNotifier{
   }
   navigateToPersonMVVM(){
     _navigationService!.navigate(PersonListView());
+  }
+  navigateToTastsEventMVVM(){
+    _navigationService!.navigate(EventTaskView());
   }
 
 }

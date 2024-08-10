@@ -42,6 +42,13 @@ class _NavigationState extends State<NavigationView> {
               navController.navigateToPersonMVVM();
             },
           ),
+            ListTile(
+              leading:Icon(Icons.task),
+              title:Text('Tasks MVVM'),
+              onTap: (){
+                navController.navigateToTastsEventMVVM();
+              },
+            ),
         ]
     ),
           ),
